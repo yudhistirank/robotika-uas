@@ -41,7 +41,7 @@ Serial.print("Data diterima dari Python: ");
 Serial.println(myData);
 
 if (myData == '1'){  
-  Serial.println("Robot Maju Rek !!!");  
+  Serial.println("Robot Maju Lee.. !!!");  
   // Maju
   digitalWrite(motor1Pin1, HIGH);
   digitalWrite(motor1Pin2, LOW);
@@ -52,7 +52,7 @@ if (myData == '1'){
 }
 
 else if (myData == '2'){  
-  Serial.println("Robot Belok Kanan Rek!!!");  
+  Serial.println("Robot Belok Kanan Lee.. !!!");  
   // Belok kanan
   digitalWrite(motor1Pin1, HIGH);
   digitalWrite(motor1Pin2, LOW);
@@ -63,7 +63,7 @@ else if (myData == '2'){
 }
 
 else if (myData == '3'){  
-  Serial.println("Robot belok Kiri Rek..!!!");  
+  Serial.println("Robot belok Kiri Lee.. !!!");  
   // Belok kiri
   digitalWrite(motor1Pin1, LOW);
   digitalWrite(motor1Pin2, HIGH);
@@ -73,7 +73,7 @@ else if (myData == '3'){
   ledcWrite(pwmChannel, dutyCycle);
 }
 else if (myData == '4'){  
-  Serial.println("Robot Mundur Rek !!!");  
+  Serial.println("Robot Mundur Lee.. !!!");  
   // Mundur
   digitalWrite(motor1Pin1, LOW);
   digitalWrite(motor1Pin2, HIGH);
@@ -85,7 +85,7 @@ else if (myData == '4'){
 
 
 else if (myData == '0'){  
-  Serial.println("Robot Berhenti Rek.. !!!");  
+  Serial.println("Robot Berhenti Lee.. !!!");  
   // Belok kiri
   digitalWrite(motor1Pin1, LOW);
   digitalWrite(motor1Pin2, LOW);
